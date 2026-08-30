@@ -1,0 +1,5 @@
+nimi = input("Mikä on sinun nimi?\n")
+ikä = int(input("Minkä ikäinen olet?\n"))
+print("")
+print(f"Pelaajan nimi: {nimi}")
+print(f"Pelaajan ikä: {ikä}")
