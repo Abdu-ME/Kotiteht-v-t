@@ -1,4 +1,4 @@
-kaudet = ("Talvi", "Talvi", "Kevät", "kevät", "kevät", "Kesä", "Kesä", "Kesä", "Syksy", "Syksy", "Syksy", "Talvi")
+kaudet = set("Talvi", "Talvi", "Kevät", "kevät", "kevät", "Kesä", "Kesä", "Kesä", "Syksy", "Syksy", "Syksy", "Talvi")
 
 kuukausi = int(input("Anna kuukauden numero\n"))
 if kuukausi >= 13:
