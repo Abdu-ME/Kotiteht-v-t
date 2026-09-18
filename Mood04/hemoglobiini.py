@@ -14,4 +14,4 @@ elif sukupuoli == "mies":
     elif hemoglobiini_mies < 134:
         print("Hemoglobiiniarvosi on alhainen.")
     else:
-        print("Hemoglobiiniarvosi on alhainen.")
+        print("Hemoglobiiniarvosi on normaali.")

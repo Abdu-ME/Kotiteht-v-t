@@ -23,3 +23,20 @@ else:
         break
     else:
         print("Väärä komento yritä uudestaan")
+
+esineet = []
+
+def lisaa_esine():
+        esine = input("Minkä esineen haluat mukaan")
+        esineet.append(esine)
+        print("Esine lisätty")
+
+
+def näytä_esineet():
+        print("Kuinka paljon tavaraa repussasi on")
+
+        if len(esineet) == 0:
+            print("Reppu on tyhjä")
+        else:
+            for esine in esineet:
+                print(f"-{esine}")
