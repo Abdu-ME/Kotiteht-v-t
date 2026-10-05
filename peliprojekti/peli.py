@@ -12,10 +12,7 @@ def nukahdit():
     print("2. Syödä kotona ja mennä kouluun myöhässä.")
     print("3. Lähteä kouluun syömättä.")
 
-    komento = funktiot.kysy_valinta(
-        "Anna komento: ",
-        ["1", "2", "3"]
-    )
+    komento = funktiot.kysy_valinta("Anna komento\n"["1", "2", "3"])
 
     if komento == "1":
         kauppa()
@@ -53,10 +50,7 @@ def myöhästy_junasta():
     print("Myöhästyit junasta ja tulit myöhässä oppitunnille.")
     print("Opettaja kysyy, miksi myöhästyit.")
 
-    komento = funktiot.kysy_valinta(
-        "1. Kertoa totuus\n2. Huijata\n",
-        ["1", "2"]
-    )
+    komento = funktiot.kysy_valinta("1. Kertoa totuus\n2. Huijata\n",["1", "2"])
 
     if komento == "1":
         print("Opettaja ymmärtää tilanteen.")
@@ -86,10 +80,7 @@ def syö_kotona():
     print("1. Menet kouluun suoraan.")
     print("2. Tarkistat ennen lähtöä reppusi.")
 
-    komento = funktiot.kysy_valinta(
-        "Anna komento\n",
-        ["1", "2"]
-    )
+    komento = funktiot.kysy_valinta("Anna komento\n",["1", "2"])
 
     if komento == "1":
         kouluun_ilman_esineitä()
@@ -115,10 +106,7 @@ def tarkista_reppu():
 
     funktiot.näytä_esineet()
 
-    komento = funktiot.kysy_valinta(
-        "Oletko tyytyväinen? kyllä/ei\n",
-        ["kyllä", "ei"]
-    )
+    komento = funktiot.kysy_valinta("Oletko tyytyväinen? kyllä/ei\n",["kyllä", "ei"])
 
     if komento == "kyllä":
         kouluun()
@@ -192,4 +180,30 @@ def heräät():
             print("Opettaja ei usko sinua ja antaa jälki istuntoa ja varaa sinulle puhuttelun rehtorin kanssa")
             print("Peli loppui")
     elif komento10 == "joo":
-        tarkista_reppu()
+        tarkista_reppu_ajoissa()
+def tarkista_reppu_ajoissa():
+    print("")
+    print("Tarkistat reppusi.")
+    
+    funktiot.näytä_esineet()
+    
+    print("")
+    print("Nyt lisää esineitä, jotka haluat ottaa kouluun mukaan.")
+    
+    funktiot.lisää_esineet()
+    
+    print("")
+    print("Nyt olet ottanut kaikki mitä halusit.")
+    print("Tarkistat repun vielä kerran.")
+    
+    funktiot.näytä_esineet()
+    
+    komento = funktiot.kysy_valinta("Oletko tyytyväinen? kyllä/ei\n",["kyllä", "ei"])
+
+    print("")
+    print("Nyt olet tyytyväinen reppuusi.")
+    print("Menet kouluun.")
+    print("Saavut kouluun ajoissa.")
+    print("Opettaja on tyytyväinen")
+    print("Pääsit koululle ajoissa ja hyvin aikaan.")
+    print("\nPeli Loppui")

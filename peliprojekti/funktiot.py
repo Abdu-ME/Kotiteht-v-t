@@ -2,7 +2,7 @@ esineet = []
 
 def lisää_esineet():
     while True:
-        esine = input("Minkä esineen haluat mukaan (enter lopettaa)")
+        esine = input("Minkä esineen haluat mukaan (enter lopettaa)\n")
         if esine == "":
             break
         esineet.append(esine)
