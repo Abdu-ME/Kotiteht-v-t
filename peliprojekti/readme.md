@@ -1,1 +1,1 @@
-## Abdulmajid ja pelin nimi on projekti
+## Abdulmajid ja pelin nimi on Koulumatka

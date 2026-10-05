@@ -1,0 +1,6 @@
+Tervetuloa peliin. Pelin tavoite on päästä kouluun ajoissa ja huolettomasti, mutta monenlaisia esteitä tulee eteen.
+Pelissä, itse valitset mitä teet kokoajan.
+Pelissä häviät, jos saat jälkistuntoa ja voitat jos pääset koululle ajoissa ilman huomautusta.
+
+Pelaat peliä silleen, että kirjoitat jokin komennon ja painat enteriä, yleensä se on 1, 2 tai 3.
+Mutta joissain tapauksissa se voi olla ei tai joo
